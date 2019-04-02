@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> Fahrenheit | Celcius </title>
+<SCRIPT LANGUAGE="JavaScript">
+function fahrenToCelcius (form) {
+    var fahrenh = form.fahren.value;
+	var celcius = (fahrenh-32)*5/9;
+    alert (fahrenh +" Fahrenheit equivale a " + celcius +" Celcius");
+}
+function celciusToFahren(form) {
+    var celcius = form.celcius.value;
+	var fahrenh= (celcius *9/5) +32  ;
+    alert (celcius +" Celcius equivale a " + fahrenh +" Fahrenheit");
+}
+</SCRIPT>
+</head>
+<body>
+
+<FORM NAME="fhaForm" ACTION="" METHOD="GET"><h1>Fahrenheit a Celcius</h1> <BR>
+<INPUT TYPE="text" NAME="fahren" VALUE=""><P>
+<INPUT TYPE="button" NAME="button" Value="Click" onClick="fahrenToCelcius(this.form)">
+</FORM>
+
+<FORM NAME="fhaForm" ACTION="" METHOD="GET"><h1>Celcius a Fahrenheit</h1> <BR>
+<INPUT TYPE="text" NAME="celcius" VALUE=""><P>
+<INPUT TYPE="button" NAME="button" Value="Click" onClick="celciusToFahren(this.form)">
+</FORM>
+
+
+</body>
+
+</html>
